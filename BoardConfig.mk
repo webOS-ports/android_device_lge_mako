@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
-TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
@@ -86,6 +84,7 @@ TARGET_USES_C2D_COMPOSITION := true
 
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_UI_LIB := librecovery_ui_mako
+TARGET_RECOVERY_SCREEN_WIDTH := 720
 
 TARGET_RECOVERY_FSTAB = device/lge/mako/fstab.mako
 RECOVERY_FSTAB_VERSION = 2
